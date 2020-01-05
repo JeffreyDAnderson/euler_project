@@ -1,0 +1,29 @@
+//Euler Project 001
+//Multiples of 3 and 5
+
+//PROBLEM STATEMENT
+//If we list the natural numbers below 10 that are multiples of 3 or 5, we get
+//3, 5, 6, 9. The sum of these multiples is 23.
+
+//Find the sum of all the multiples of 3 or 5 below 1000.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int MAX_NUMBER = 1000;
+	int sum = 0;
+	int number = 1;
+
+	while (number < MAX_NUMBER)
+	{
+		if (number % 3 == 0 || number % 5 == 0)
+		{
+			sum += number;
+		}
+		number += 1;
+	}
+
+	cout << sum;
+}
